@@ -1,0 +1,11 @@
+tell application "Finder"
+	try
+		mount volume "smb://192.168.0.100/gemeinsamer_Ordner" as user name "USER" with password "PASSWORD"
+		mount volume "smb://192.168.0.100/gemeinsamer_Ordner_2" as user name "USER" with password "PASSWORD"
+		mount volume "smb://192.168.0.100/photo" as user name "USER" with password "PASSWORD"
+		mount volume "smb://192.168.0.100/video" as user name "USER" with password "PASSWORD"
+		mount volume "smb://192.168.0.100/web" as user name "USER" with password "PASSWORD"
+		mount volume "smb://192.168.0.100/music" as user name "USER" with password "PASSWORD"
+		mount volume "smb://192.168.0.100/Time_Machine_Backup" as user name "USER" with password "PASSWORD"
+	end try
+end tell
